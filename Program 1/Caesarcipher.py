@@ -54,7 +54,7 @@ def process(text, mode, shift):
   for c in text:
       if c.isalpha():
           num = ord(c)
-          num += shift
+          num = num + shift
 
           if c.isupper():
              if num > ord('Z'):
@@ -109,17 +109,19 @@ def decrypt(message, mode, shift):
 #     __main__
 #*******************************************************************
 infile = input("Enter the name of your file, with extension: ")
+
 with open(infile, 'r') as ifile:
     data = ifile.read().replace('\n', '')
-outfile = "processed_" + infile
-print(infile)
-print(outfile)
+    
 encrypt_or_decrypt = get_mode()
-shift_number = input("Enter your shift number: ")
+
+shift_number = int(input("Enter your shift number: "))
 
 if encrypt_or_decrypt == 'e':
+    outfile = "encrypted_" + infile
     outdata = encrypt(data, encrypt_or_decrypt, shift_number)
 else:
+    outfile = "decrypted_" + infile
     outdata = decrypt(data, encrypt_or_decrypt, shift_number)
     
 with open(outfile, "w") as ofile:
