@@ -1,3 +1,21 @@
+//********************************************************************
+//      Project #3: Tic-Tac-Toe
+//      Name: Chris Duhan
+//      Class: Contemporary programming languages: Python and Java
+//      Instructor: Dr. Johnson
+//      Due Date: 11/07/2017
+//********************************************************************
+//      This program allows two people to play a game of Tic-Tac-Toe
+//	against each other.
+//	I will acknowledge which functions I took the most inspiration
+//	from in their respective comments. Overall, I got inspiration
+//	from two main scourses: 
+//	Martyr2, http://www.coderslexicon.com/a-beginner-tic-tac-toe-class-for-java/
+// 	and
+//	Ojus Milind Save, https://medium.com/@ojusmilindsave/tutorial-to-implement-tic-tac-toe-in-java-ad639661a9b.
+//
+//********************************************************************
+
 import java.io.IOException;
 import java.util.Scanner;
 
