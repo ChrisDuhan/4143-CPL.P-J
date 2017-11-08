@@ -31,6 +31,7 @@ public class main {
 				System.out.println("It's a draw!");
 			}
 			System.out.println("Would you like to play again? (Y/N)");
+			// Anything that's not either an 'n' or 'N' is interpreted as a yes
 			if (playAgain.next().toUpperCase().charAt(0) == 'N') {
 				keepPlaying = false;
 				System.out.println("Bye!");
